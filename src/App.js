@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 import logo from './logo.svg';
 import './App.css';
@@ -17,11 +17,11 @@ class App extends Component {
 
   componentDidMount() {
     fetch('https://jsonplaceholder.typicode.com/users')
-    .then( response => response.json())
-    .then(users => this.setState({ monsters: users}))
+      .then(response => response.json())
+      .then(users => this.setState({ monsters: users }))
   }
 
-  handleChange = (e) => this.setState({ searchField: e.target.value} );
+  handleChange = (e) => this.setState({ searchField: e.target.value });
 
   render() {
     const { monsters, searchField } = this.state;
@@ -37,10 +37,10 @@ class App extends Component {
 
         />
         <CardList monsters={filteredMonsters}>
-        
+
         </CardList>
-       
-    </div>
+
+      </div>
     )
   }
 }
