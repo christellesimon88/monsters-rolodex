@@ -1,4 +1,4 @@
-import Reaxt from 'react';
+import React from 'react';
 
 import '../search-box/search-box.style.css';
 
